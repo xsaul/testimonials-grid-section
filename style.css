@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+  font-weight: 600;
+  min-height: 100vh;
+}
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.daniel h2,
+.jonathan h2,
+.patrick h2 {
+  color: #fff;
+}
+
+.daniel img,
+.jonathan img,
+.patrick img {
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.jeanette img,
+.kira img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.light {
+  color: hsl(210, 46%, 95%);
+  font-size: 20px;
+  padding: 0 1rem;
+  position: relative;
+  top: -2rem;
+}
+
+.dark {
+  color: hsl(0, 0%, 81%);
+}
+
+.light2 {
+  color: hsl(0, 0%, 71%);
+}
+
+.dark2 {
+  color: hsl(217, 19%, 35%);
+}
+
+.pad {
+  padding: 0 1rem;
+  position: relative;
+  top: -1rem;
+}
+
+.pos {
+  padding: 0 1rem;
+  font-size: 20px;
+  position: relative;
+  top: -2rem;
+}
+
+.line {
+  line-height: 1.5rem;
+}
+
+.quote {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+  background-color: #fff;
+}
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.kira {
+  background-color: #fff;
+}
+
+.info {
+  font-size: 11px;
+  position: relative;
+  left: 4.5rem;
+  top: -3.5rem;
+}
+
+.testimonial {
+  border-radius: 12px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .testimonial:last-child {
+    grid-column-start: 4;
+    /* grid-row-start: 1;
+        grid-row-end: span 2; */
+    grid-row: 1 / span 2;
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+}
